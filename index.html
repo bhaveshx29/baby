@@ -10,7 +10,193 @@
 <body>
     <div class="container">
         <div class="confetti" aria-hidden="true"></div>
-        <svg id="flower-frame" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 641.5 637.3">
+        <svg id="flower-frame" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img"
+            aria-label="Birthday bouquet">
+            <defs>
+                <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#ff9ad6" stop-opacity="0.6" />
+                    <stop offset="70%" stop-color="#8cd9ff" stop-opacity="0.18" />
+                    <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+                </radialGradient>
+                <radialGradient id="petalPink" cx="40%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#ffe0f2" />
+                    <stop offset="55%" stop-color="#ff7fcb" />
+                    <stop offset="100%" stop-color="#ff4ba8" />
+                </radialGradient>
+                <radialGradient id="petalPeach" cx="40%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#fff0c7" />
+                    <stop offset="55%" stop-color="#ffb46a" />
+                    <stop offset="100%" stop-color="#ff7e45" />
+                </radialGradient>
+                <radialGradient id="petalLavender" cx="40%" cy="30%" r="70%">
+                    <stop offset="0%" stop-color="#efe6ff" />
+                    <stop offset="55%" stop-color="#b48cff" />
+                    <stop offset="100%" stop-color="#7b4bff" />
+                </radialGradient>
+                <radialGradient id="centerGold" cx="50%" cy="40%" r="60%">
+                    <stop offset="0%" stop-color="#fff7c2" />
+                    <stop offset="60%" stop-color="#ffd464" />
+                    <stop offset="100%" stop-color="#ffb400" />
+                </radialGradient>
+                <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#b2f4d9" />
+                    <stop offset="55%" stop-color="#5bd6a6" />
+                    <stop offset="100%" stop-color="#2ea07a" />
+                </linearGradient>
+                <linearGradient id="stemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#7ff2d2" />
+                    <stop offset="60%" stop-color="#3fbfa3" />
+                    <stop offset="100%" stop-color="#1e7a72" />
+                </linearGradient>
+                <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ff77b8" />
+                    <stop offset="60%" stop-color="#ff3b86" />
+                    <stop offset="100%" stop-color="#c61f62" />
+                </linearGradient>
+                <radialGradient id="sparkleGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#ffe7f5" />
+                </radialGradient>
+            </defs>
+            <g class="bouquet">
+                <circle class="glow" cx="350" cy="340" r="230" />
+                <g class="stems">
+                    <path class="stem stem-left" d="M320 620 C 270 520 235 430 255 320" />
+                    <path class="stem stem-left" d="M285 610 C 210 520 185 420 205 300" />
+                    <path class="stem stem-center" d="M350 630 C 340 520 330 420 350 280" />
+                    <path class="stem stem-right" d="M380 620 C 430 520 470 430 455 320" />
+                    <path class="stem stem-right" d="M415 610 C 490 520 525 420 515 300" />
+                </g>
+                <g class="leaves">
+                    <ellipse class="leaf" cx="270" cy="460" rx="48" ry="20" transform="rotate(-25 270 460)" />
+                    <ellipse class="leaf" cx="310" cy="520" rx="54" ry="22" transform="rotate(18 310 520)" />
+                    <ellipse class="leaf" cx="430" cy="470" rx="52" ry="22" transform="rotate(24 430 470)" />
+                    <ellipse class="leaf" cx="395" cy="520" rx="46" ry="18" transform="rotate(-14 395 520)" />
+                    <ellipse class="leaf" cx="200" cy="410" rx="44" ry="18" transform="rotate(-35 200 410)" />
+                    <ellipse class="leaf" cx="510" cy="410" rx="46" ry="18" transform="rotate(36 510 410)" />
+                </g>
+                <g class="flowers">
+                    <g class="flower flower-left" transform="translate(245 300)">
+                        <g class="petals">
+                            <ellipse class="petal petal-pink" cx="0" cy="-44" rx="32" ry="18" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-44" rx="32" ry="18" transform="rotate(60)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-44" rx="32" ry="18" transform="rotate(120)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-44" rx="32" ry="18" transform="rotate(180)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-44" rx="32" ry="18" transform="rotate(240)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-44" rx="32" ry="18" transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="18" />
+                    </g>
+                    <g class="flower flower-center" transform="translate(350 245)">
+                        <g class="petals">
+                            <ellipse class="petal petal-peach" cx="0" cy="-52" rx="38" ry="22" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-52" rx="38" ry="22" transform="rotate(60)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-52" rx="38" ry="22"
+                                transform="rotate(120)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-52" rx="38" ry="22"
+                                transform="rotate(180)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-52" rx="38" ry="22"
+                                transform="rotate(240)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-52" rx="38" ry="22"
+                                transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="22" />
+                    </g>
+                    <g class="flower flower-right" transform="translate(455 305)">
+                        <g class="petals">
+                            <ellipse class="petal petal-lavender" cx="0" cy="-44" rx="32" ry="18" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-44" rx="32" ry="18"
+                                transform="rotate(60)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-44" rx="32" ry="18"
+                                transform="rotate(120)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-44" rx="32" ry="18"
+                                transform="rotate(180)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-44" rx="32" ry="18"
+                                transform="rotate(240)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-44" rx="32" ry="18"
+                                transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="18" />
+                    </g>
+                    <g class="flower flower-top-left" transform="translate(175 230) scale(0.85)">
+                        <g class="petals">
+                            <ellipse class="petal petal-lavender" cx="0" cy="-40" rx="28" ry="16" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-40" rx="28" ry="16"
+                                transform="rotate(60)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-40" rx="28" ry="16"
+                                transform="rotate(120)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-40" rx="28" ry="16"
+                                transform="rotate(180)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-40" rx="28" ry="16"
+                                transform="rotate(240)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-40" rx="28" ry="16"
+                                transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="16" />
+                    </g>
+                    <g class="flower flower-top-right" transform="translate(535 240) scale(0.9)">
+                        <g class="petals">
+                            <ellipse class="petal petal-pink" cx="0" cy="-42" rx="30" ry="16" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-42" rx="30" ry="16" transform="rotate(60)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-42" rx="30" ry="16" transform="rotate(120)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-42" rx="30" ry="16" transform="rotate(180)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-42" rx="30" ry="16" transform="rotate(240)" />
+                            <ellipse class="petal petal-pink" cx="0" cy="-42" rx="30" ry="16" transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="16" />
+                    </g>
+                    <g class="flower flower-lower-left" transform="translate(235 380) scale(0.8)">
+                        <g class="petals">
+                            <ellipse class="petal petal-peach" cx="0" cy="-36" rx="26" ry="14" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-36" rx="26" ry="14" transform="rotate(60)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(120)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(180)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(240)" />
+                            <ellipse class="petal petal-peach" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="14" />
+                    </g>
+                    <g class="flower flower-lower-right" transform="translate(465 380) scale(0.82)">
+                        <g class="petals">
+                            <ellipse class="petal petal-lavender" cx="0" cy="-36" rx="26" ry="14" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(60)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(120)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(180)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(240)" />
+                            <ellipse class="petal petal-lavender" cx="0" cy="-36" rx="26" ry="14"
+                                transform="rotate(300)" />
+                        </g>
+                        <circle class="center" cx="0" cy="0" r="14" />
+                    </g>
+                </g>
+                <g class="ribbon">
+                    <path class="ribbon-wrap"
+                        d="M270 520 C 330 552 420 552 480 520 L 480 560 C 420 592 330 592 270 560 Z" />
+                    <path class="ribbon-tail ribbon-left"
+                        d="M300 560 C 275 615 255 650 240 675 C 280 655 315 625 330 600 Z" />
+                    <path class="ribbon-tail ribbon-right"
+                        d="M450 560 C 475 615 495 650 510 675 C 470 655 435 625 420 600 Z" />
+                </g>
+                <g class="sparkles">
+                    <circle class="sparkle" cx="115" cy="140" r="6" />
+                    <circle class="sparkle" cx="590" cy="165" r="5" />
+                    <circle class="sparkle" cx="560" cy="95" r="4" />
+                    <circle class="sparkle" cx="145" cy="95" r="4" />
+                    <circle class="sparkle" cx="610" cy="320" r="6" />
+                    <circle class="sparkle" cx="95" cy="320" r="6" />
+                </g>
+            </g>
+        </svg>
+        <svg id="legacy-flower-frame" class="legacy-flower" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 641.5 637.3" aria-hidden="true">
             <style type="text/css">
                 .st0 {
                     fill: #FFFFFF;
@@ -898,9 +1084,7 @@
         </div>
 
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-    <script src='https://assets.codepen.io/16327/DrawSVGPlugin3.min.js'></script>
     <script src="./script.js"></script>
 
 </body>

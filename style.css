@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Great+Vibes&display=swap');
 
+:root {
+    --pink: #ff66b6;
+    --peach: #ffb06a;
+    --lavender: #a984ff;
+    --gold: #ffd464;
+    --leaf: #5bd6a6;
+    --stem: #3fbfa3;
+    --ribbon: #ff3b86;
+}
+
 body {
     background: radial-gradient(circle at 20% 20%, #2b1b3d 0%, #14161f 55%, #0f151a 100%);
     overflow-x: hidden;
 }
 
 .container {
-    width: 50%;
+    width: min(720px, 92vw);
     margin: 0 auto;
     position: relative;
 }
@@ -53,6 +63,63 @@ body {
 svg#flower-frame {
     height: 90vh;
     width: 100%;
+    overflow: visible;
+    filter: drop-shadow(0 18px 28px rgba(8, 18, 28, 0.35));
+}
+
+.legacy-flower {
+    display: none;
+}
+
+.bouquet {
+    transform-origin: 50% 80%;
+}
+
+.glow {
+    fill: url(#glowGrad);
+}
+
+.stem {
+    fill: none;
+    stroke: url(#stemGrad);
+    stroke-width: 9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.leaf {
+    fill: url(#leafGrad);
+    filter: drop-shadow(0 6px 8px rgba(20, 35, 40, 0.3));
+}
+
+.petal {
+    opacity: 0.98;
+}
+
+.petal-pink {
+    fill: url(#petalPink);
+}
+
+.petal-peach {
+    fill: url(#petalPeach);
+}
+
+.petal-lavender {
+    fill: url(#petalLavender);
+}
+
+.center {
+    fill: url(#centerGold);
+    filter: drop-shadow(0 4px 6px rgba(54, 31, 0, 0.35));
+}
+
+.ribbon-wrap,
+.ribbon-tail {
+    fill: url(#ribbonGrad);
+}
+
+.sparkle {
+    fill: url(#sparkleGrad);
 }
 
 .bloom-message {
@@ -82,22 +149,7 @@ svg#flower-frame {
 .bloom-subtitle {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(14px, 1.6vw, 22px);
-    color: #64c1bb;
+    color: #9de6ff;
     letter-spacing: 2px;
     text-transform: uppercase;
-}
-
-#Footer_group_1_,
-[id^=PinkFlowerGroup],
-[id^=BaseGroup] path,
-[id^=LeafGroup] path,
-path[id^=Stroke],
-g[id^=BudGroup] g[id^=BudGroup] g[id^=Bud],
-#Bud8_1_,
-#Bud10_1_,
-#Bud23_1_,
-#Bud26_1_,
-[id^=Dots],
-[id^=Flourish] {
-    visibility: hidden;
 }
