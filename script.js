@@ -75,3 +75,34 @@ var tl = gsap.timeline()
     .fromTo(dots, 6, { autoAlpha: 0 }, { autoAlpha: 1, ease: Expo.easeOut }, 'flower3+=1')
     .fromTo(dots, 5, { scale: 0, transformOrigin: '50% 50%' }, { scale: 1, ease: Expo.easeOut }, 'flower3')
     .fromTo('.bloom-message', { autoAlpha: 0, y: 10 }, { duration: 1.6, autoAlpha: 1, y: 0, ease: 'power2.out' }, 'flower3+=2');
+
+var confettiLayer = document.querySelector('.confetti');
+var confettiHost = document.querySelector('.container');
+
+if (confettiLayer) {
+    var confettiCount = 120;
+    var hostWidth = confettiHost ? confettiHost.clientWidth : window.innerWidth;
+    var spread = Math.max(hostWidth * 0.9, 320);
+
+    for (var i = 0; i < confettiCount; i += 1) {
+        var piece = document.createElement('span');
+        var x = (Math.random() - 0.5) * spread;
+        var drift = (Math.random() - 0.5) * 180;
+        var size = 6 + Math.random() * 6;
+        var duration = 4 + Math.random() * 4;
+        var delay = Math.random() * 2;
+        var hue = Math.floor(Math.random() * 360);
+        var spin = Math.floor(Math.random() * 360) + 'deg';
+
+        piece.className = 'confetti-piece';
+        piece.style.setProperty('--x', x + 'px');
+        piece.style.setProperty('--drift', drift + 'px');
+        piece.style.setProperty('--size', size + 'px');
+        piece.style.setProperty('--duration', duration + 's');
+        piece.style.setProperty('--delay', delay + 's');
+        piece.style.setProperty('--hue', hue);
+        piece.style.setProperty('--spin', spin);
+
+        confettiLayer.appendChild(piece);
+    }
+}
